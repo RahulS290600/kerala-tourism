@@ -1,0 +1,84 @@
+
+  .card{
+    position: relative; // Ensure positioning context for absolute overlay
+    height: 32rem; // Set the desired height
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Ensure the image covers the whole item area
+    }
+
+    // Create a dark overlay using a pseudo-element
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .card-img-overlay {
+      position: absolute;
+      bottom: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      z-index: 2;
+
+
+      h2 {
+        margin: 0;
+        font-family: "Exo 2", sans-serif;
+        font-weight:bolder; 
+        font-size:xx-large;
+      }
+    }
+  }
+  .district-about {
+    margin-top: 20px; // Adjust as needed for top spacing
+  }
+  
+  .about-content {
+    background-color: #fff; // Optional: Add a background color
+    padding: 20px; // Padding inside the content box
+    border-radius: 8px; // Optional: Add rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add a subtle shadow for depth
+  }
+  
+  .about-content h3 {
+    margin-bottom: 20px; // Space between the title and the description
+  }
+  
+  .about-content p {
+    line-height: 1.6; // Improve readability
+  }
+
+  .attractions-about {
+    margin-top: 20px; // Adjust as needed for top spacing
+  }
+  
+  .attractions-content {
+    background-color: #fff; // Optional: Add a background color
+    padding: 20px; // Padding inside the content box
+    border-radius: 8px; // Optional: Add rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add a subtle shadow for depth
+  }
+  
+  .attractions-content h3 {
+    margin-bottom: 20px; // Space between the title and the description
+  }
+  
+  .attractions-content p {
+    line-height: 1.6; // Improve readability
+  }
+
+  
+
+  
+  
+  

@@ -1,0 +1,55 @@
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+// .navbar {
+//   padding: 0;
+//   .container-fluid {
+//     background-color: rgb(246, 233, 214);
+//     position: sticky;
+//     height: 100%;
+//   }
+// }
+
+// .navbar-nav {
+//   .nav-item {
+//     margin-right: 20 px; // Adjust the spacing as needed
+//   }
+// }
+// .navbar-brand {
+//   font-family: "Exo 2", sans-serif;
+//   font-weight: bolder;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar {
+  padding: 0;
+  
+  .container-fluid {
+    background-color: rgb(246, 233, 214);
+    position: sticky;
+    height: 100%;
+  }
+  
+  .navbar-nav {
+    .nav-item {
+      margin-right: 20px; // Adjust the spacing as needed
+
+      &:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+    }
+
+    .nav-link {
+      &.active {
+        font-family: "Exo 2", sans-serif;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-family: "Exo 2", sans-serif;
+    font-weight: bolder;
+  }
+}

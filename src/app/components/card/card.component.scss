@@ -1,0 +1,31 @@
+.section-head {
+  h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .sub-head {
+    display: block;
+    margin-bottom: 4rem; // Space below the sub-head
+  }
+}
+.card {
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    &:hover {
+      transform: scale(1.05); // Zoom in the card
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Add a deeper shadow on hover
+    }
+    .card-img-top {
+      height: 200px; // Set a fixed height for all card images
+      object-fit: cover; // Ensures the image covers the area, maintaining aspect ratio
+      transition: transform 0.3s ease; // Smooth zoom transition
+    }
+    .card-body {
+      transition: transform 0.3s ease; // Smooth zoom transition
+    }
+  }
+h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+}

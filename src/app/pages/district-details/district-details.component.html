@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+
+
+<h1 class="">{{productName[(id)].name}}</h1>
+
+<div class="container">
+  <div class="card text-bg-dark">
+    <img src="{{productName[(id)].images[0]}}" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h2 class="card-title">{{productName[(id)].title}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-14">
+      <div class="district-about">
+        <div class="about-content">
+          <h1>About {{productName[(id)].name}}</h1>
+          <p class="about-desc">{{productName[(id)].description}} <br>{{productName[(id)].history}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attractions-container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-14">
+        <div class="district-attractions">
+          <div class="attractions-content">
+            <h1>Attractions of {{productName[(id)].name}}</h1>
+
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                  <div class="col">
+                      <div class="card text-bg-dark">
+                          <img src="{{productName[(id)].images[0]}}" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h2 class="card-title">{{productName[(id)].attractions[0]}}</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card text-bg-dark">
+                          <img src="{{productName[(id)].images[1]}}" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h2 class="card-title">{{productName[(id)].attractions[1]}}</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                  <div class="col">
+                      <div class="card text-bg-dark">
+                          <img src="{{productName[(id)].images[2]}}" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h2 class="card-title">{{productName[(id)].attractions[2]}}</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card text-bg-dark">
+                          <img src="{{productName[(id)].images[3]}}" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h2 class="card-title">{{productName[(id)].attractions[3]}}</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                  <div class="col">
+                      <div class="card text-bg-dark">
+                          <img src="{{productName[(id)].images[4]}}" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h2 class="card-title">{{productName[(id)].attractions[4]}}</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- If you have more items to display, you can add more col elements here -->
+              </div>
+          </div>
+          

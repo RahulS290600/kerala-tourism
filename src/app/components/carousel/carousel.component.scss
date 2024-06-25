@@ -1,0 +1,46 @@
+// styles.scss
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+#carouselExampleSlidesOnly {
+    .carousel-item {
+      position: relative; // Ensure positioning context for absolute overlay
+      height: 32rem; // Set the desired height
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Ensure the image covers the whole item area
+      }
+  
+      // Create a dark overlay using a pseudo-element
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+  
+      .carousel-caption {
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: white;
+        z-index: 2;
+
+  
+        h5, p {
+          margin: 0;
+          font-family: "Exo 2", sans-serif;
+          font-weight:bolder; 
+          font-size:xx-large;
+        }
+      }
+    }
+  }
+  

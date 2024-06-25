@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="section-head">
+        <h1 class="">Districts in Kerala</h1>
+        <!-- <span class="sub-head"></span> -->
+        <div class="district d-flex flex-wrap">
+          <div *ngFor="let item of productName; let i = index" class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" (click)="viewDistrictDetails(i)">
+            <div class="card h-100">
+              <img src="{{item.images[0]}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="item.name">{{item.name}}</h5>
+                <p class="card-text">{{item.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
